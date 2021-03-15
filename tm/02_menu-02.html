@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>02_menu-02</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("header").load("header.html");  // 원하는 파일 경로를 삽입하면 된다
+        $("footer").load("footer.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+
+    });
+</script>
+</head>
+<body>
+    <header></header>
+
+    <section class="sec product">
+        <div class="inner">
+            <div class="tit_wrap">
+                <strong class="blind">Product</strong>
+                <p class="blind">
+                    업그레이드된 기내 프로덕트를 미리 만나보고 상가프로항공과 함께 여행을 계획해보세요.
+                    싱가포르항공과 함께 여행을 계획해보세요.
+                    싱가포르 스톱오버 홀리데이, 싱가포르 익스플로러 패스로 알찬 여행을 즐길 수 있습니다.
+                    창이공항에서 경유시 누릴 수 있는 혜택도 꼼꼼히 챙겨보세요.
+                </p>
+                <div class="product_tab">
+                    <ul class="tab_lst">
+                        <li class="tab_item"><a href="#">싱가포르항공 소개</a></li>
+                        <li class="tab_item"><a href="#">글로벌 네트워크</a></li>
+                        <li class="tab_item"><a href="#">클래스 별 좌석</a></li>
+                        <li class="tab_item on"><a href="#">싱가포르 패키지</a></li>
+                        <!--[D] 활성화 시 on 클래스 추가-->
+                        <li class="tab_item"><a href="#">특별 혜택</a></li>
+                        <li class="tab_item"><a href="#">에어텔</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="detail_wrap">
+                <div class="tab_cont">
+                    <div class="product_wrap">
+                        <h2 class="product_tit">싱가포르 패키지</h2>
+                        <div class="product_detail product1">
+                            <strong class="detail_tit">싱가포르 스톱오버 홀리데이</strong>
+                            <p class="detail_dsc">
+                                SGD40으로 SGD450 이상의 가치를 누려보세요!
+                            </p>
+                            <ul class="detail_lst">
+                                <li class="lst_item">
+                                    <strong class="item_tit type_yellow">베이직 싱가포르 스톱오버 홀리데이 (SGD40 ~ )</strong>
+                                    <p class="item_txt">호텔 1박, 공항 호텔 왕복 (싱가포르가 최종 목적지인<br>경우에는 베이직 싱가포르 스톱오버 홀리데이만 이용 가능)</p>
+                                </li>
+                                <li class="lst_item">
+                                    <strong class="item_tit type_blue">싱가포르 스톱오버 홀리데이(SGD50 ~ )</strong>
+                                    <p class="item_txt">호텔 1박, 공항 호텔 왕복 교통편, SIA 홉온 버스 무제한 탑승,<br>15개 주요 관광지 무료 입장권</p>
+                                </li>
+                            </ul>
+                            <div class="btn_wrap">
+                                <a href="#" class="btn_lnk"><span class="blind">자세히 보기</span></a>
+                            </div>
+                        </div>
+                        <div class="product_detail product2">
+                            <strong class="detail_tit">싱가포르 익스플로러 패스</strong>
+                            <p class="detail_dsc">
+                                항공권 구매 시 싱가포르 익스플로러 패스를 추가하여 해당 유효 기간 동안 20 여곳의 다양한 관광 명소를 방문해보세요.
+                            </p>
+                            <div class="product_table">
+                                <table>
+                                    <colgroup>
+                                        <col style="width:33.3333%;">
+                                        <col style="width:33.3333%;">
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                        <th>패스권</th>
+                                        <th>성인</th>
+                                        <th>아동</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>1일패스</strong></td>
+                                            <td>SGD60</td>
+                                            <td>SGD45</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>2일패스</strong></td>
+                                            <td>SGD95</td>
+                                            <td>SGD70</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>3일패스</strong></td>
+                                            <td>SGD115</td>
+                                            <td>SGD85</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="notice_txt">* 가든스 바이 더 베이, 주롱새 공원, 싱가포르 플라이어, 차이나타운 헤리티지 센터, 싱가포르 국립 막물관, 센토사 입장권 + 7개 프리미엄 명소 중 택 1 (예: 스카이라인 루지 센토사, 세그웨이 펀 라이드 등)</p>
+                            <div class="btn_wrap">
+                                <a href="#" class="btn_lnk"><span class="blind">자세히 보기</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer></footer>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>main</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("header").load("header.html");  // 원하는 파일 경로를 삽입하면 된다
+        $("footer").load("footer.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+
+    });
+</script>
+</head>
+<body>
+    <header></header>
+
+    <main class="about">
+        <div class="main_banner">
+            <div class="media_wrap">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Psr4HZmWHnQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <section class="sec main">
+            <div class="inner">
+                <nav class="cont_nav">
+                    <ul class="nav_lst">
+                        <li class="nav_item"><a href="#" class="nav_lnk">home</a></li>
+                        <li class="nav_item"><a href="#" class="nav_lnk">싱가포르와 친해지기</a></li>
+                    </ul>
+                </nav>
+                <div class="tit_wrap">
+                    <h2 class="sec_tit"><span class="blind">Welcome to Singapore!</span></h2>
+                    <p class="sec_dsc">고층 건물과 정원으로 가득 찬 풍경과 함께 세계적인 수준의<br>
+                        생활 환경을 자랑하는 활기찬 국제도시, 싱가포르!<br>
+                        천의 얼굴 싱가포르를 만나보세요.</p>
+                    <div class="btn_wrap">
+                        <a href="#" class="btn_lnk"><span class="blind">자세히보기</span></a>
+                    </div>
+                </div>
+                <div class="introduce_wrap">
+                    <div class="introduce_item item_01">
+                        <p class="txt">비행 거리 : 4,627 km , 6시간 10분 비행<br>시간 차이 : 한국보다 1시간 느림</p>
+                    </div>
+                    <div class="introduce_item item_02">
+                        <p class="txt">통화 : 싱가포르 달러 (SGD 또는 S$) 사용<br>
+                            환율 : SGD1은 약 806원 (2017년 12월 기준)</p>
+                    </div>
+                    <div class="introduce_item item_03">
+                        <p class="txt">인구 : 약 556만명 | 면적 : 약 697제곱 킬로미터<br>
+                            GDP : 2,837억 달러 (2013 IMF 기준)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec hotspot">
+            <div class="inner">
+                <div class="tit_wrap">
+                    <strong class="sec_tit"><span class="blind">Hot Spots</span></strong>
+                    <p class="sec_dsc">화려한 도시와 자연이 공존하여 다양한 볼거리가 가득한<br>
+                        싱가포르, 싱가포르 관광 명소 곳곳을 둘러보며<br>
+                        다양한 볼거리와 즐길 거리로 유쾌한 시간을 가져보세요.</p>
+                </div>
+                <div class="detail_wrap">
+                    <ul class="box_lst hotspot_lst">
+                        <li class="lst_item">
+                            <div class="img_box" style="background-image:url(img/hotspot.jpg);"></div>
+                            <div class="dsc_wrap">
+                                <strong class="dsc_tit">센토사 섬</strong>
+                                <p class="dsc_txt">센토사의 중심에 위치한 웨이브
+                                    하우스 센토사에서 10피트 높이
+                                    의 플로우배럴 파도를 타고 마음
+                                    껏 서핑을 즐겨보세요.</p>
+                            </div>
+                        </li>
+                        <li class="lst_item">
+                            <div class="img_box" style="background-image:url(img/hotspot2.jpg);"></div>
+                            <div class="dsc_wrap">
+                                <strong class="dsc_tit">싱가포르 동물원</strong>
+                                <p class="dsc_txt">아시아의 최초이자 유일한 야생
+                                    테마 파크에서 다양한 생태 체험
+                                    을 해보세요.</p>
+                            </div>
+                        </li>
+                        <li class="lst_item">
+                            <div class="img_box" style="background-image:url(img/hotspot3.jpg);"></div>
+                            <div class="dsc_wrap">
+                                <strong class="dsc_tit">클락 키</strong>
+                                <p class="dsc_txt">강을 끼고 있는 낭만적인 레스토
+                                    랑, 바, 클럽에서 만찬과 여유를
+                                    즐기세요.</p>
+                            </div>
+                        </li>
+                        <li class="lst_item">
+                            <div class="img_box" style="background-image:url(img/hotspot4.jpg);"></div>
+                            <div class="dsc_wrap">
+                                <strong class="dsc_tit">마리나 베이 샌즈</strong>
+                                <p class="dsc_txt">마리나 베이의 아름다운 전망과
+                                    도시 경관까지 즐길 수 있는 럭셔
+                                    리한 5성급 호텔로 모십니다.</p>
+                            </div>
+                        </li>
+                        <li class="lst_item">
+                            <div class="img_box" style="background-image:url(img/hotspot5.jpg);"></div>
+                            <div class="dsc_wrap">
+                                <strong class="dsc_tit">오차드 로드</strong>
+                                <p class="dsc_txt">센토사의 중심에 위치한 웨이브
+                                    하우스 센토사에서 10피트 높이
+                                    의 플로우배럴 파도를 타고 마음
+                                    껏 서핑을 즐겨보세요.</p>
+                            </div>
+                        </li>
+                        <li class="lst_item">
+                            <div class="img_box" style="background-image:url(img/hotspot6.jpg);"></div>
+                            <div class="dsc_wrap">
+                                <strong class="dsc_tit">썬텍 시티 몰</strong>
+                                <p class="dsc_txt">아시아의 최초이자 유일한 야생
+                                    테마 파크에서 다양한 생태 체험
+                                    을 해보세요.</p>
+                            </div>
+                        </li>
+                        <li class="lst_item">
+                            <div class="img_box" style="background-image:url(img/hotspot7.jpg);"></div>
+                            <div class="dsc_wrap">
+                                <strong class="dsc_tit">차이나 타운</strong>
+                                <p class="dsc_txt">2차 대전 이전의 동양적인 분위
+                                    기가 살아 있는 노점과 거리를
+                                    활보하며 화려한 중국 문화를
+                                    만끽해보세요.</p>
+                            </div>
+                        </li>
+                        <li class="lst_item">
+                            <div class="img_box" style="background-image:url(img/hotspot8.jpg);"></div>
+                            <div class="dsc_wrap">
+                                <strong class="dsc_tit">리틀 인디아</strong>
+                                <p class="dsc_txt">아시아의 최초이자 유일한 야생
+                                    테마 파크에서 다양한 생태 체험
+                                    을 해보세요.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btn_wrap">
+                        <a href="#" class="btn_lnk"><span class="blind">자세히 보기</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec gallery">
+            <div class="inner">
+                <div class="tit_wrap">
+                    <strong class="sec_tit"><span class="blind">Gallery</span></strong>
+                    <p class="sec_dsc">지금 이 시각, 인스타그램에서 세계인이 마주하는<br>
+                        싱가포르의 다양한 모습들을 사진으로 만나보세요.<br>
+                        인스타그램<a href="#" class="instagram">#singapore</a></p>
+                </div>
+                <div class="detail_wrap">
+                    <ul class="gallery_lst">
+                        <li class="lst_item">
+                            <a href="#" class="gallery_lnk">
+                                <img src="img/gallery.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="lst_item">
+                            <a href="#" class="gallery_lnk">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                        <li class="lst_item">
+                            <a href="#" class="gallery_lnk">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                        <li class="lst_item">
+                            <a href="#" class="gallery_lnk">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Psr4HZmWHnQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </a>
+                        </li>
+                        <li class="lst_item">
+                            <a href="#" class="gallery_lnk">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                        <li class="lst_item">
+                            <a href="#" class="gallery_lnk">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                        <li class="lst_item full_box">
+                            <a href="#" class="gallery_lnk">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Psr4HZmWHnQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </a>
+                        </li>
+                        <li class="lst_item">
+                            <a href="#" class="gallery_lnk">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                        <li class="lst_item">
+                            <a href="#" class="gallery_lnk">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                        <li class="lst_item">
+                            <a href="#" class="gallery_lnk">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                        <li class="lst_item">
+                            <a href="#" class="gallery_lnk">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                        <li class="lst_item">
+                            <a href="#" class="gallery_lnk">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                        <li class="lst_item">
+                            <a href="#" class="gallery_lnk">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                        <li class="lst_item">
+                            <a href="#" class="gallery_lnk">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                        <li class="lst_item">
+                            <a href="#" class="gallery_lnk">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                        <li class="lst_item full_box">
+                            <a href="#" class="gallery_lnk">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Psr4HZmWHnQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </a>
+                        </li>
+                        <li class="lst_item">
+                            <a href="#" class="gallery_lnk">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                        <li class="lst_item">
+                            <a href="#" class="gallery_lnk">
+                                <img src="" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="btn_wrap">
+                        <a href="#" class="btn_lnk"><span class="blind">더보기</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
