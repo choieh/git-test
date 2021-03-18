@@ -98,7 +98,8 @@ legend {
 }
 
 /* header */
-#header .inner{position:relative;height:14.0625vw;background:url(../img/m/m_header.jpg) no-repeat;background-position:center;background-size:cover}
+#header{background:url(../img/m/m_header.jpg) no-repeat;background-position:center;background-size:cover;z-index:10;}
+#header .inner{position:relative;height:14.0625vw;}
 #header .logo{position:absolute;top:50%;left:4.6875vw;width:28.1250vw;height:6.2500vw;transform:translateY(-50%); background:url(../img/m/m_header_logo.png) no-repeat;background-position:center;background-size:contain}
 #header .logo a{display:block;height:100%;}
 #header .menu_lnk{position:absolute;top:50%;right:3.1250vw;width:6.2500vw;height:5vw;padding:1.5625vw;font-size:0;background:url(../img/m/m_ico_menu.png) no-repeat;background-position:center;background-size:6.2500vw;transform:translateY(-50%)}
@@ -106,9 +107,45 @@ legend {
 #header .menu_wrap.on{display:block;position:fixed;width:100%;height:100vh;padding:6.2500vw;text-align:center;line-height:9.3750vw;background-color:#fff;box-sizing:border-box;z-index:1;}
 
 /* footer */
-#footer .inner{position:relative;height:43.4375vw;background:url(../img/m/m_footer.jpg) no-repeat;background-position:0 0;background-size:cover;}
+#footer{background:url(../img/m/m_footer.jpg) no-repeat;background-position:0 0;background-size:cover;}
+#footer .inner{position:relative;height:43.4375vw;}
 #footer .footer_logo_wrap{position:relative;}
 #footer .footer_logo{position:absolute;top:17.8125vw;left:23.4375vw;width:53.7500vw;height:5vw}
 #footer .sponsor{position:absolute;top:6vw;left:0;width:100%;height:10vw;padding:0 3.125vw;font-size:0;box-sizing:border-box}
 #footer .sponsor_item{display:inline-block;width:20%;height:100%}
-#footer .sponsor_item a{display:block;height:100%}
+#footer .sponsor_item a{display:block;height:100%;height:55px;background:#002569;content:'';}
+
+@media screen and (min-width: 786px) {
+#header{background-image:url(../img/header.jpg);background-position:0 0;background-size:100%;}
+#header.on{position:relative;}
+#header.on:after{position:absolute;bottom:-54px;left:0;width:100%;height:55px;background:#002569;content:'';}
+#header .inner{width:940px;height:139px;margin:0 auto}
+#header .logo{position:absolute;top:50%;left:0;width:216px;height:50px;transform:translateY(-50%);background-image:url(../img/header_logo.png)}
+#header .gnb{padding-left:260px;box-sizing:border-box;}
+#header .menu_lnk{display:none;}
+#header .menu_wrap{display:block;z-index:1;}
+.gnb_lst:after{display:block;clear:both;content:'';}
+.gnb_lst .gnb_item{position:relative;float:left;width:33.3333%}
+.gnb_item .gnb_main_lnk{display:block;width:100%;height:138px;background:url(../img/nav_title01.png) no-repeat;background-position:center;}
+.gnb_item.on .gnb_sub_lst{display:block}
+.gnb_item.nav_main02 .gnb_main_lnk{background-image:url(../img/nav_title02.png);}
+.gnb_item.nav_main03 .gnb_main_lnk{background-image:url(../img/nav_title03.png);}
+.gnb_item:hover .gnb_main_lnk, .gnb_item.on .gnb_main_lnk{background-color:#ff9f00;}
+.gnb .gnb_sub_lst{display:none;position:absolute;bottom:-55px;transform:translateX(19px);z-index:1;}
+.gnb_sub_lst:before{position:absolute;top:0;left:50%;width:20px;height:11px;transform:translateX(-50%);background:url(../img/header_arrow.png) no-repeat;background-position:0 center;content:''}
+.gnb_sub_lst:after{display:block;clear:both;content:'';}
+.gnb_sub_item{position:relative;float:left;}
+.gnb_sub_lnk{display:block;padding:20px;color:#5c77aa}
+.gnb_item.nav_main02 .gnb_sub_lst{left:-307px;transform:translateX(158px)}
+.gnb_item.nav_main03 .gnb_sub_lst{left:-156px;transform:translateX(80px)}
+.gnb_sub_item .gnb_sub_lnk:after{position:absolute;top:23px;left:0;width:1px;height:12px;background:#335187;content:'';}
+.gnb_sub_item:first-child .gnb_sub_lnk:after{display:none;}
+.gnb_sub_item .gnb_sub_lnk:hover, .gnb_sub_item .gnb_sub_lnk.on{color:#ff9f00;}
+
+#footer{background-image:url(../img/footer.jpg)}
+#footer .inner{width:940px;height:215px;margin:0 auto;}
+#footer .footer_logo{position:absolute;top:40px;left:0;width:270px;height:28px;}
+#footer .sponsor{position:absolute;top:40px;left:auto;right:-26px;width:50%;height:55px;padding:0}
+#footer .sponsor_item{display:inline-block;width:20%;height:100%}
+#footer .sponsor_item a{background:transparent;}
+}

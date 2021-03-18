@@ -166,6 +166,8 @@
 /* .cont_nav{display:block;} */
 
 section .inner{max-width:940px;margin:0 auto}
+.about .media_wrap{height:580px;}
+
 .foodies .sec{margin-top:100px;}
 .foodies .pc_cont{display:inline;}
 .foodies .main{padding:90px 0 80px}
